@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 #FROM java:openjdk-8-jre
 
-apt-get -y install uuid pwgen openjdk-8-jre
+apt-get -y install uuid pwgen openjdk-8-jre \
 
 RUN wget "https://www.crushftp.com/early8/CrushFTP8_PC.zip" -O /var/opt/CrushFTP.zip \
     && unzip -q /var/opt/CrushFTP.zip -d /var/opt/ \
