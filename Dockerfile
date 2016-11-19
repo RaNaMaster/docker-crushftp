@@ -1,10 +1,11 @@
 FROM ubuntu:trusty
 #FROM java:openjdk-8-jre
 
-
+#Install dependencies
 RUN apt-get update; \
-apt-get -y install uuid pwgen openjdk-8-jre 
+apt-get -y install uuid pwgen openjdk-7-jre-headless;
 
+#Install CrushFTP
 RUN wget "https://www.crushftp.com/early8/CrushFTP8_PC.zip" -O /var/opt/CrushFTP.zip \
     && unzip -q /var/opt/CrushFTP.zip -d /var/opt/ \
     && rm -rf /var/opt/CrushFTP.zip /tmp/*
