@@ -1,12 +1,7 @@
 #!/usr/bin/with-contenv bash
 
-# make folders
-mkdir -p \
-	/downloads \
-	/incomplete-downloads
 
 # permissions
 chown -R abc:abc \
-	/downloads \
-	/incomplete-downloads \
+	/var/opt/CrushFTP8_PC 
 
