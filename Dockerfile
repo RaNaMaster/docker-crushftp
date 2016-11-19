@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM lsiobase/xenial
 #FROM java:openjdk-8-jre
 
 #Install dependencies
