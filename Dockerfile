@@ -3,7 +3,7 @@ FROM lsiobase/xenial
 
 #Install dependencies
 RUN apt-get update; \
-apt-get -y install uuid pwgen openjdk-7-jre-headless wget unzip;
+apt-get -y install uuid pwgen openjdk-8-jre wget unzip;
 
 #Install CrushFTP
 RUN wget "https://www.crushftp.com/early8/CrushFTP8_PC.zip" -O /var/opt/CrushFTP.zip \
