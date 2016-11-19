@@ -15,7 +15,7 @@ WORKDIR /var/opt/CrushFTP8_PC
 # ports and volumes
 EXPOSE 8080 21 22
 
-ADD ./start.sh /start.sh
-RUN chmod +x /start.sh
+#ADD ./start.sh /start.sh
+#RUN chmod +x /start.sh
 
-CMD ["/start.sh"]
+#CMD ["/start.sh"]
