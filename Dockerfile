@@ -13,3 +13,8 @@ COPY root/ /
 # ports and volumes
 EXPOSE 8080 21 22
 VOLUME /config
+
+ADD ./start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD ["/start.sh"]
