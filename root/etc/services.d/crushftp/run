@@ -3,10 +3,12 @@
 if [ ! -d "/var/opt/CrushFTP8_PC/users/MainUsers/crushadmin" ]; then
   
    exec \
-   s6-setuidgid abc java -jar CrushFTP.jar -a "crushadmin" "password" \
+   s6-setuidgid abc java -jar /var/opt/CrushFTP8_PC/CrushFTP.jar -a "crushadmin" "password" \
     echo crushadmin created
+    chown -R abc:abc \
+	/var/opt/CrushFTP8_PC
 fi
 exec \
- s6-setuidgid abc java -jar CrushFTP.jar -d
+ s6-setuidgid abc java -jar /var/opt/CrushFTP8_PC/CrushFTP.jar -d
 
 
