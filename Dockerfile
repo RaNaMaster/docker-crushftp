@@ -7,8 +7,7 @@ RUN wget "https://www.crushftp.com/early8/CrushFTP8_PC.zip" -O /var/opt/CrushFTP
     && unzip -q /var/opt/CrushFTP.zip -d /config/ \
     && rm -rf /var/opt/CrushFTP.zip /tmp/*
 
-# add local files
-COPY root/ /
+
 
 # ports and volumes
 EXPOSE 8080 21 22
