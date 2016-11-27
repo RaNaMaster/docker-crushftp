@@ -1,14 +1,14 @@
 #!/usr/bin/with-contenv bash
 
-if [ ! -d "/var/opt/CrushFTP8_PC/users/MainUsers/crushadmin" ]; then
+if [ ! -d "/config/users/MainUsers/crushadmin" ]; then
   
    exec \
-   s6-setuidgid abc java -jar /var/opt/CrushFTP8_PC/CrushFTP.jar -a "crushadmin" "password" \
-    echo crushadmin created
+   s6-setuidgid abc java -jar /config/CrushFTP.jar -a "crushadmin" "password" \
+    echo crushadmin created \
     chown -R abc:abc \
-	/var/opt/CrushFTP8_PC
+	/config
 fi
 exec \
- s6-setuidgid abc java -jar /var/opt/CrushFTP8_PC/CrushFTP.jar -d
+ s6-setuidgid abc java -jar /config/CrushFTP.jar -d
 
 

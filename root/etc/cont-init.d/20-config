@@ -2,6 +2,5 @@
 
 
 # permissions
-chown -R abc:abc \
-	/var/opt/CrushFTP8_PC 
+chown -R abc:abc /config
 
