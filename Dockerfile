@@ -9,6 +9,8 @@ RUN wget "https://www.crushftp.com/early8/CrushFTP8_PC.zip" -O /var/opt/CrushFTP
 
 
 
+WORKDIR /config/CrushFTP8_PC
+
 # ports and volumes
 EXPOSE 8080 21 22
 VOLUME /config
